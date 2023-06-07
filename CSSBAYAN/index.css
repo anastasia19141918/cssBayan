@@ -1,1 +1,45 @@
 @import './reset.css';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./img/Котиик.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bayan {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 5px auto;
+}
+
+.bayan-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.bayan-title:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #C5B64B;
+  margin-top: 5.0rem;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
