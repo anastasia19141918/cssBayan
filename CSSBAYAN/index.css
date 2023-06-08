@@ -42,6 +42,18 @@ body {
   width: 100%;
 }
 
+.bayan-container:hover .bayan-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url('./cvg/accordion_btn.svg');
+  width: 40px;
+  height: 30px;
+  background-repeat: no-repeat;
+
+  margin-left: 95%;
+}
+
 .bayan-item {
   cursor: pointer;
 }
@@ -66,6 +78,8 @@ body {
   left: 0;
   right: 0;
 }
+
+
 
 .bayan-img__muni {
   width: 0;
