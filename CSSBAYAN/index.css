@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('./img/Котиик.jpg');
+  background-image: url('./img/кактусик.jpg');
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -15,14 +15,13 @@ body {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  
   margin: 5px auto;
 }
 
 .bayan-title {
   display: block;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 4.0rem;
   position: relative;
   text-align: center;
 }
@@ -32,12 +31,54 @@ body {
   position: absolute;
   display: inline-block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #C5B64B;
   margin-top: 5.0rem;
   left: 0;
   right: 0;
 }
+
+.bayan-container {
+  width: 100%;
+}
+
+.bayan-item {
+  cursor: pointer;
+}
+
+.bayan-item:hover .bayan-img__muni {
+  width: 100%;
+}
+
+.bayan-text {
+  font-size: 2.0rem;
+  text-align: left;
+}
+
+.bayan-text:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #C5B64B;
+  margin-top: 2.5rem;
+  left: 0;
+  right: 0;
+}
+
+.bayan-img__muni {
+  width: 0;
+  transition: width .5s;
+}
+
+.activ-img {
+  display: block;
+  width: 100%;
+}
+
+
+
 
 
 
