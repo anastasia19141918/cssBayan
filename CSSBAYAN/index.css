@@ -42,7 +42,7 @@ body {
   width: 100%;
 }
 
-.bayan-container:hover .bayan-text::before {
+.bayan-container:hover .bayan-text:before {
   content: "";
   display: block;
   position: absolute;
@@ -50,16 +50,29 @@ body {
   width: 40px;
   height: 30px;
   background-repeat: no-repeat;
-
+  
   margin-left: 95%;
 }
 
 .bayan-item {
   cursor: pointer;
+  position: relative;
 }
 
-.bayan-item:hover .bayan-img__muni {
+.bayan-item:hover .bayan-img__muni{
   width: 100%;
+}
+
+.bayan-item:hover .bayan-text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url('./cvg/accordion_btn-open.svg');
+  width: 40px;
+  height: 30px;
+  background-repeat: no-repeat;
+  
+  margin-left: 95%;
 }
 
 .bayan-text {
