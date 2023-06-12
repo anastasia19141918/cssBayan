@@ -51,12 +51,11 @@ body {
   height: 30px;
   background-repeat: no-repeat;
   
-  margin-left: 95%;
+  margin-left: 93%;
 }
 
 .bayan-item {
   cursor: pointer;
-  position: relative;
 }
 
 .bayan-item:hover .bayan-img__muni{
@@ -72,12 +71,19 @@ body {
   height: 30px;
   background-repeat: no-repeat;
   
-  margin-left: 95%;
+  margin-left: 93%;
 }
 
 .bayan-text {
   font-size: 2.0rem;
   text-align: left;
+  transition: background-color .2s;
+}
+
+.bayan-item:hover .bayan-text {
+  background-color: #C5B64B;
+  padding: 15px 5px;
+  
 }
 
 .bayan-text:after {
@@ -91,8 +97,6 @@ body {
   left: 0;
   right: 0;
 }
-
-
 
 .bayan-img__muni {
   width: 0;
