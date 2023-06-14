@@ -58,11 +58,11 @@ body {
   cursor: pointer;
 }
 
-.bayan-item:hover .bayan-img__muni{
+.bayan-item:hover .bayan-img {
   width: 100%;
 }
 
-.bayan-item:hover .bayan-text:before {
+.bayan-item:hover .bayan-text:before{
   content: "";
   display: block;
   position: absolute;
@@ -72,6 +72,15 @@ body {
   background-repeat: no-repeat;
   
   margin-left: 93%;
+}
+
+.inpu-item {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+
+  position: absolute;
 }
 
 .bayan-text {
@@ -98,14 +107,21 @@ body {
   right: 0;
 }
 
-.bayan-img__muni {
-  width: 0;
-  transition: width .5s;
+.inpu-item:checked ~ .bayan-img {
+  width: 100%;
 }
 
-.activ-img {
-  display: block;
-  width: 100%;
+.bayan-img {
+  width: 0;
+  transition: width .6s;
+  margin: auto;
+  
+}
+
+.bayan-img__muni {
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 2%;
 }
 
 /* media start */
